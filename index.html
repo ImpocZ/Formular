@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Výpočet Trojčlenky</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <header class="p-3 text-center bg-primary">
+            <h1 class = "text-light" style = "text-transform: capitalize;">Výpočet Trojčlenky</h1>
+        </header>
+        <main style = "background-color: antiquewhite;" class="pt-3 container">
+            <h2 class="text-center">Kalkulačka trojčlenky</h2>
+            <div class="container">
+                <form>
+                    <div class="form-group row">
+                        <label for="X">X</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="X" id="X"
+                                placeholder="Zadejte první hodnotu (třeba kolik toho mám)" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="Y">Y</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name = "Y" id = "Y"
+                                placeholder="Zadejte druhou hodnotu (třeba kolik to váží)"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="Z">Z</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name = "Z" id = "Z"
+                                placeholder="Zadejte třetí hodnotu (třeba kolik toho budeme mít)"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="G">G</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name = "G" id = "G"
+                                placeholder="Zadejte poslední hodnotu (popřípadně nechte volné!)"/>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label for="typTrojčlenky" class="col-sm-3 col-form-label">Přímá úměrnost či ne</label>
+                        <div class="col-sm-9">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="typTrojčlenky" id="přímá" value="přímá" />
+                                    Přímá úměrnost
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="typTrojčlenky" id="přímá" value="nepřímá" />
+                                    Nepřímá úměrnost
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="offset-sm-3 col-sm-9">
+                            <button type="button" id="calculator" class="btn btn-danger">
+                                Vypočítat
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="display-5" id="alfaResult"></div>
+            </div>
+        </main>
+        <footer class="text-center p-5">
+            &copy;Šenk Radim 2024 SŠPU Opava
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+        src="main.js">
+        </script>
+    </body>
+</html>
